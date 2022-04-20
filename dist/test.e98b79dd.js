@@ -134,19 +134,20 @@ var _css = _interopRequireDefault(require("./css.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+console.log("hi");
 var player = {
   id: undefined,
   time: 100,
   ui: {
-    demo: document.querySelector('#demo'),
-    demo2: document.querySelector('#demo2')
+    demo: document.querySelector("#demo"),
+    demo2: document.querySelector("#demo2")
   },
   events: {
-    '#btnPause': 'pause',
-    '#btnPlay': 'play',
-    '#btnSlow': 'slow',
-    '#btnNormal': 'normal',
-    '#btnFast': 'fast'
+    "#btnPause": "pause",
+    "#btnPlay": "play",
+    "#btnSlow": "slow",
+    "#btnNormal": "normal",
+    "#btnFast": "fast"
   },
   n: 1,
   init: function init() {
@@ -228,7 +229,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "10491" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2455" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
